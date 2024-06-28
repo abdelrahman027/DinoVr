@@ -1,5 +1,5 @@
-Projects end-point
-http://localhost:8001/api/projects/
+Projects end-point<br/>
+http://localhost:8001/api/projects/<br/>
 for single project
 http://localhost:8001/api/projects/id
 /////////////////
