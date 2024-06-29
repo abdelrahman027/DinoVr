@@ -25,7 +25,17 @@ http://localhost:8001/api/blogs/id<br/>
 Teams end-point<br/>
 http://localhost:8001/api/team/<br/>
 
-testimonials end-point
-http://localhost:8001/api/testimonials/
+testimonials end-point<br/>
+http://localhost:8001/api/testimonials/<br/>
+///////////////<br/>
+for admin end-point<br/>
+http://localhost:8001/admin<br/>
+<h2>Password and user for admin</h2><br/>
+user:admin <br/>
+pass:admin <br/>
+
+
+
+
 
 
