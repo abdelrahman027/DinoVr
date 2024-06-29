@@ -1,5 +1,5 @@
 <h1>How to Use Sparks API</h1> <br/>
-<h3>Products</h3>
+<h3>Projects</h3>
 Projects end-point<br/>
 http://localhost:8001/api/projects/<br/>
 for single project<br/>
