@@ -20,3 +20,8 @@ class Project(models.Model):
     def __str__(self):
         return self.name
 
+class ProjectImage(models.Model):
+    project = models.ForeignKey(Project, on_delete=models.SET_NULL, 
+    null=True, related_name='project_images')
+    image = models.ImageField(null=True, blank=True,
+    default='/project_photos/default_project.png',upload_to='project_photos/',)
