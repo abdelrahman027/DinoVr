@@ -23,7 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/',include('services.urls')),
     path('api/',include('projects.urls'))
-]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+urlpatterns+= static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 
 handler404 = 'utils.error_view.handler404'
