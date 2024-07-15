@@ -35,7 +35,7 @@ class Testimonials(models.Model):
 class Blog(models.Model):
     title = models.CharField(max_length=100)
     description= models.TextField(max_length=3000)
-    blog_image = models.ImageField(upload_to='blogs/', default='blogs/default-blog.png',blank=True,null=True)
+    blog_image = models.ImageField(upload_to='blogs/', default='blogs/default_blog.png',blank=True,null=True)
 
     def __str__(self) :
         return self.title
