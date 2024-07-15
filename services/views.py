@@ -34,7 +34,7 @@ def get_all_testimonials(request):
 
 @api_view(['GET'])
 def get_all_blogs(request):
-    blogs = Service.objects.all()
+    blogs = Blog.objects.all()
     serializer = BlogSerializer(blogs,many=True)
     return Response({"blogs":serializer.data})
 
