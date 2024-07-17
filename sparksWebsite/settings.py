@@ -32,6 +32,8 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -142,3 +144,53 @@ CORS_ALLOW_CREDENTIALS = True
 # CORS_ORIGIN_WHITELIST = (
 #     'http://localhost:8000',
 # )
+
+JAZZMIN_SETTINGS ={
+    "site_title": "SPARKS",
+
+    # Title on the login screen (19 chars max) (defaults to current_admin_site.site_header if absent or None)
+    "site_header": "SPARKS",
+
+    # Title on the brand (19 chars max) (defaults to current_admin_site.site_header if absent or None)
+    "site_brand": "SPARKS",
+    "site_logo_classes": "img-circle",
+    # Logo to use for your site, must be present in static files, used for brand on top left
+    "site_logo": "../media/logo/logo.png",
+    "welcome_sign": "Welcome Sparks Admin Panel",
+    "login_logo": "../media/logo/logo.png",
+    # Copyright on the footer
+    "copyright": "Sparks 2024",
+    "show_ui_builder": False,
+}
+
+JAZZMIN_UI_TWEAKS = {
+    "navbar_small_text": False,
+    "footer_small_text": False,
+    "body_small_text": False,
+    "brand_small_text": False,
+    "brand_colour": "navbar-gray",
+    "accent": "accent-danger",
+    "navbar": "navbar-dark",
+    "no_navbar_border": False,
+    "navbar_fixed": False,
+    "layout_boxed": False,
+    "footer_fixed": False,
+    "sidebar_fixed": False,
+    "sidebar": "sidebar-dark-danger",
+    "sidebar_nav_small_text": False,
+    "sidebar_disable_expand": False,
+    "sidebar_nav_child_indent": False,
+    "sidebar_nav_compact_style": False,
+    "sidebar_nav_legacy_style": False,
+    "sidebar_nav_flat_style": False,
+    "theme": "darkly",
+    "dark_mode_theme": "darkly",
+    "button_classes": {
+        "primary": "btn-primary",
+        "secondary": "btn-secondary",
+        "info": "btn-info",
+        "warning": "btn-warning",
+        "danger": "btn-danger",
+        "success": "btn-success"
+    }
+}
