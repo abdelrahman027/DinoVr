@@ -2,8 +2,8 @@ from django.shortcuts import get_object_or_404, render
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-from .models import Service,Team,Blog,Testimonials
-from .serializers import ServiceSerializer ,BlogSerializer ,TeamSerializer,TestimonialsSerializer
+from .models import Service,Team,Blog,Testimonials,Faqs
+from .serializers import ServiceSerializer ,BlogSerializer ,TeamSerializer,TestimonialsSerializer,FaqsSerializer
 # Create your views here.
 
 
@@ -44,3 +44,10 @@ def get_blogs_detail(request,pk):
     serializer = BlogSerializer(blogs,many=False)
 
     return Response({"blogs":serializer.data})
+
+
+@api_view(['GET'])
+def get_all_faqs(request):
+    faqs = Faqs.objects.all()
+    serializer = FaqsSerializer(faqs,many=True)
+    return Response({"faqs":serializer.data})
