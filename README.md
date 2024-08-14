@@ -15,7 +15,7 @@ for projects paginations<br/>
 http://localhost:8000/api/projects?page=[pageNumber]<br/>
 example : http://localhost:8000/api/projects?page=2 <br/>
 
-<h4>(note as the design referes there are 9 projects per page)</h4><br/>
+<h4>(note as the design refer there are 9 projects per page)</h4><br/>
 <br/><br/>
 <h3>Service</h3>
 Services end-point<br/>
@@ -38,15 +38,13 @@ http://localhost:8000/api/testimonials/<br/>
 <h3>FAQS</h3>
 testimonials end-point<br/>
 http://localhost:8000/api/faqs/<br/>
+<h3>Locations</h3>
+testimonials end-point<br/>
+http://localhost:8000/api/locations/<br/>
 ///////////////<br/>
+<h3>ADMIN</h3>
 for admin end-point<br/>
 http://localhost:8000/admin<br/>
 <h2>Password and user for admin</h2><br/>
 user:admin <br/>
 pass:admin <br/>
-
-
-
-
-
-
