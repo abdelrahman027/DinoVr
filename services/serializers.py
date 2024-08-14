@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Service,Blog,Team,Testimonials,Faqs
+from .models import Service,Blog,Team,Testimonials,Faqs,Location
 
 
 class ServiceSerializer(serializers.ModelSerializer):
@@ -34,4 +34,10 @@ class FaqsSerializer(serializers.ModelSerializer):
 
     class Meta:
         model= Faqs
+        fields="__all__"
+
+class LocationSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model= Location
         fields="__all__"

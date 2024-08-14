@@ -47,3 +47,15 @@ class Faqs(models.Model):
     def __str__(self) :
         return self.title
     
+
+class Location(models.Model):
+    country=models.CharField(max_length=100)
+    state=models.CharField(max_length=100)
+    address=models.CharField(max_length=512)
+    district=models.CharField(max_length=100)
+    location= models.TextField(max_length=3000)
+    location_image = models.ImageField(upload_to='locations/', default='locations/locations.jpg',blank=True,null=True)
+
+    def __str__(self) :
+        return self.country + self.state
+    

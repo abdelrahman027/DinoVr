@@ -11,5 +11,5 @@ urlpatterns = [
     path("blogs/",views.get_all_blogs,name="blogs"),
     path("blogs/<str:pk>",views.get_blogs_detail,name="blogs-detail"),
     path("faqs/",views.get_all_faqs,name="faqs"),
-
+    path("locations/",views.get_all_locations,name="locations"),
 ]
