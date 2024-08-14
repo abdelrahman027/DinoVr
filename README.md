@@ -35,6 +35,9 @@ http://localhost:8000/api/team/<br/>
 <h3>Testimonials</h3>
 testimonials end-point<br/>
 http://localhost:8000/api/testimonials/<br/>
+<h3>FAQS</h3>
+testimonials end-point<br/>
+http://localhost:8000/api/faqs/<br/>
 ///////////////<br/>
 for admin end-point<br/>
 http://localhost:8000/admin<br/>
