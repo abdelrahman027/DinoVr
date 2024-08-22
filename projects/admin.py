@@ -4,5 +4,5 @@ from .models import Project,ProjectImage,Category
 
 admin.site.register(Project)
 admin.site.register(ProjectImage)
-admin.site.register(Category)
+#admin.site.register(Category)
 

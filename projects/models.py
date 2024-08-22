@@ -3,11 +3,11 @@ from django.db import models
 # Create your models here.
 
 class Category(models.TextChoices):
-    DRAWING3D="3D Drawing"
-    DRAWING2D="2D Drawing"
-    MEDIA_PRODUCTION="Media Production"
-    ANIMATION="Animation"
-    STORY_BOARDS="Story Boards"
+    Campaigns360="360 Campaigns"
+    ANIMATION3D="3D Animation"
+    ANIMATION2D="2D Animation"
+    Media_Production="Media Production"
+    Digital_Marketing="Digital Marketing"
 
 
 
