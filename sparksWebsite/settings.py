@@ -30,7 +30,7 @@ SECRET_KEY = 'django-insecure-dbpzu&_*(9p8zne^yiqbr^e$x8s_%&ux#*^=js7q4s_rpwbumc
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['sparks-backend-01-production.up.railway.app']
 
 
 
