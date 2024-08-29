@@ -1,0 +1,1 @@
+web: gunicorn sparksWebsite.wsgi --log-file -
